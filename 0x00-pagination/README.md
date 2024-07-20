@@ -26,15 +26,18 @@ Initialize the pagination system with your dataset and specify the number of ite
 
       dataset = [1, 2, 3, ..., 100]  # Example dataset
       paginator = Paginator(dataset, items_per_page=10)
+
 2. Fetching Pages:
 Retrieve a specific page of data.
 
       page_data = paginator.get_page(1)  # Get the first page
+
 3. Navigating Pages:
 Move to the next or previous page.
 
       next_page = paginator.next_page()
       previous_page = paginator.previous_page()
+
 4. Customizing Page Size:
 Change the number of items per page.
 
