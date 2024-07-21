@@ -1,4 +1,4 @@
- # 0x00-pagination
+ i# 0x00-pagination
 
 ## Description
 
@@ -20,28 +20,28 @@ The main features of the pagination system include:
 ## Usage
 
 1. Initialization:
-Initialize the pagination system with your dataset and specify the number of items per page:
+Initialize the pagination system with your dataset and specify the number of items per page.
 
-      from pagination import Paginator
+              from pagination import Paginator
 
-      dataset = [1, 2, 3, ..., 100]  # Example dataset
-      paginator = Paginator(dataset, items_per_page=10)
+              dataset = [1, 2, 3, ..., 100]  # Example dataset
+              paginator = Paginator(dataset, items_per_page=10)
 
 2. Fetching Pages:
-Retrieve a specific page of data:
+Retrieve a specific page of data.
 
-      page_data = paginator.get_page(1)  # Get the first page
+              page_data = paginator.get_page(1)  # Get the first page
 
 3. Navigating Pages:
-Move to the next or previous page:
+Move to the next or previous page.
 
-      next_page = paginator.next_page()
-      previous_page = paginator.previous_page()
+              next_page = paginator.next_page()
+              previous_page = paginator.previous_page()
 
 4. Customizing Page Size:
-Change the number of items per page:
+Change the number of items per page.
 
-      paginator.set_items_per_page(20)
+              paginator.set_items_per_page(20)
 
 ## Testing
 
